@@ -1,11 +1,17 @@
+<div class="container mt-3">
+
 <ul class="list-group">
   <li class="list-group-item">Name: <%= @flat.name %></li>
   <li class="list-group-item">Address: <%= @flat.address %></li>
+  <li class="list-group-item">Description: <%= @flat.description %></li>
+  <li class="list-group-item">Price per night: <%= @flat.price_per_night %></li>
+  <li class="list-group-item">Number of guests: <%= @flat.number_of_guests %></li>
 </ul>
 
 
-<div class="d-flex  align-items-end">
+<div class="d-flex  align-items-end mt-3">
   <div class=" flex-column mx-1">
   <%=link_to "back", flats_path, class:"btn btn-primary"%>
   </div>
+</div>
 </div>
