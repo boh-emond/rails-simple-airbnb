@@ -1,0 +1,22 @@
+
+<div class="container mt-3">
+  <div class="row">
+    <h1>Flats</h1>
+  </div>
+  <div class="row">
+    Number of flats: <%=@flats.count%>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="flat-card p-2" style="width: 18rem;"><% @flats.each do |flat|%>
+          <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?w=1200" class="card-img-top" alt="...">
+          <div class="card-body">
+          <h5 class="card-title"><%= flat.name%></h5>
+          <p class="card-text"><%=flat.description%></p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      <%end%>
+      </div>
+    </div>
+  </div>
+</div>

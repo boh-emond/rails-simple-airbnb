@@ -1,0 +1,11 @@
+<ul class="list-group">
+  <li class="list-group-item">Name: <%= @flat.name %></li>
+  <li class="list-group-item">Address: <%= @flat.address %></li>
+</ul>
+
+
+<div class="d-flex  align-items-end">
+  <div class=" flex-column mx-1">
+  <%=link_to "back", flats_path, class:"btn btn-primary"%>
+  </div>
+</div>
